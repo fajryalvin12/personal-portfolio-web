@@ -3,6 +3,12 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Blue eclipse */
+  --blue-eclipse-1: #272757;
+  --blue-eclipse-2: #8686ac;
+  --blue-eclipse-3: #505081;
+  --blue-eclipse-4: #0f0e47;
 }
 
 @theme inline {
