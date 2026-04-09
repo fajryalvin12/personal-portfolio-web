@@ -1,3 +1,4 @@
+import Button from "./ui/Button";
 export default function Hero() {
   return (
     <>
@@ -11,6 +12,7 @@ export default function Hero() {
             nostrum. Vitae, eveniet.
           </p>
           <span>Branding Session</span>
+          <Button variant="outline" size="medium" children="Button" />
         </div>
         <div className="border p-4 rounded-md">Image Section</div>
       </div>
