@@ -1,10 +1,11 @@
 import Card from "@/components/ui/Card";
 import Button from "@/components/ui/Button";
+import Container from "@/components/ui/Container";
 
 export default function Projects() {
   return (
     <>
-      <div className="flex gap-4 px-4 justify-between py-4 h-screen">
+      <Container>
         {/* Project Showcase */}
 
         <div className="flex flex-col gap-4 p-4 w-full">
@@ -35,7 +36,7 @@ export default function Projects() {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </>
   );
 }

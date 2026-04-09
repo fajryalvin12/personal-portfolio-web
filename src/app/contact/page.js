@@ -1,7 +1,9 @@
+import Container from "@/components/ui/Container";
+
 export default function Contact() {
   return (
     <>
-      <div className="flex flex-col gap-4 px-4 py-4 h-screen items-center">
+      <Container className="flex flex-col gap-4">
         {/* Contact Form */}
         <form className="flex flex-col gap-4 p-4 border rounded-md max-w-[600px]">
           <div className="flex flex-col gap-2">
@@ -41,7 +43,7 @@ export default function Contact() {
           <div>Github</div>
           <div>WhatsApp</div>
         </div>
-      </div>
+      </Container>
     </>
   );
 }

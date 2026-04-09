@@ -1,7 +1,8 @@
+import Container from "@/components/ui/Container";
 export default function About() {
   return (
     <>
-      <div className="flex gap-4 px-4 justify-between items-center h-screen">
+      <Container className="flex gap-4">
         {/* About Me */}
         <div className="flex-1/2 border p-4 rounded-md hover:shadow-md">
           <h1>About Me</h1>
@@ -20,7 +21,7 @@ export default function About() {
           </div>
           <div className="border p-4 rounded-md hover:shadow-md">Education</div>
         </div>
-      </div>
+      </Container>
     </>
   );
 }
