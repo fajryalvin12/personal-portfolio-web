@@ -34,7 +34,7 @@ export default function Button({ variant, size, children }) {
       style += " " + lg;
       break;
     default:
-      style += " " + medium;
+      style += " " + md;
   }
 
   return (

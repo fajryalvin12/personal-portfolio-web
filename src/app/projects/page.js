@@ -1,21 +1,22 @@
 import Card from "@/components/ui/Card";
 import Button from "@/components/ui/Button";
 import Container from "@/components/ui/Container";
+import Section from "@/components/ui/Section";
 
 export default function Projects() {
   return (
     <>
       <Container>
         {/* Project Showcase */}
-
-        <div className="flex flex-col gap-4 p-4 w-full">
+        <Section>
           {/* Variant Button */}
           <div className="flex justify-evenly">
             <Button variant="outline" size="sm" children="Frontend" />
             <Button variant="outline" size="sm" children="Backend" />
             <Button variant="outline" size="sm" children="Fullstack" />
           </div>
-
+        </Section>
+        <Section>
           {/* Detail Project */}
           <div className="">
             <div className="flex flex-col gap-4 items-center">
@@ -35,7 +36,7 @@ export default function Projects() {
               </div>
             </div>
           </div>
-        </div>
+        </Section>
       </Container>
     </>
   );
