@@ -12,7 +12,8 @@ export default function Hero() {
             nostrum. Vitae, eveniet.
           </p>
           <span>Branding Session</span>
-          <Button variant="outline" size="medium" children="Button" />
+          <Button variant="outline" size="md" children="Outline" />
+          <Button variant="primary" size="md" children="Primary" />
         </div>
         <div className="border p-4 rounded-md">Image Section</div>
       </div>

@@ -2,12 +2,13 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import Button from "./ui/Button";
 
 export default function Navbar() {
   const [active, setActive] = useState(false);
   return (
     <>
-      <nav className="flex justify-between p-4 items-center sticky top-0 bg-[var(--blue-eclipse-4)] text-white">
+      <nav className="flex justify-between p-4 items-center sticky top-0 bg-[var(--blue-eclipse-1)] text-white">
         <Link className="text-[#8686ac] hover:text-white" href="/">
           Logo
         </Link>
@@ -49,12 +50,7 @@ export default function Navbar() {
             </Link>
           </li>
         </ul>
-        <a
-          className="border px-2 py-1 rounded-md shadow-md bg-white text-[#0f0e47] font-semibold"
-          href=""
-        >
-          Download CV
-        </a>
+        <Button variant="outline" size="md" children="Download CV" />
       </nav>
     </>
   );
