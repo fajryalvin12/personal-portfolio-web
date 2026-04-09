@@ -1,35 +1,20 @@
 import Container from "@/components/ui/Container";
+import Card from "@/components/ui/Card";
 
 export default function Experience() {
   return (
     <>
       <Container className="flex gap-4">
         {/* Experience Showcases */}
-
-        <div className="flex flex-col p-4 border rounded-md shadow-md gap-4 shrink-0">
-          <div className="border rounded-md p-2">Experience Title</div>
-          <div className="border rounded-md p-2">Experience Company</div>
-          <div className="border rounded-md p-2">Experience Date</div>
-          <div className="border rounded-md p-2">
-            Experience Job Description
-          </div>
-        </div>
-        <div className="flex flex-col p-4 border rounded-md shadow-md gap-4 shrink-0">
-          <div className="border rounded-md p-2">Experience Title</div>
-          <div className="border rounded-md p-2">Experience Company</div>
-          <div className="border rounded-md p-2">Experience Date</div>
-          <div className="border rounded-md p-2">
-            Experience Job Description
-          </div>
-        </div>
-        <div className="flex flex-col p-4 border rounded-md shadow-md gap-4 shrink-0">
-          <div className="border rounded-md p-2">Experience Title</div>
-          <div className="border rounded-md p-2">Experience Company</div>
-          <div className="border rounded-md p-2">Experience Date</div>
-          <div className="border rounded-md p-2">
-            Experience Job Description
-          </div>
-        </div>
+        <Card title="Experience (Title) 1" description="Company - Date">
+          <p className="text-sm">Job Description</p>
+        </Card>
+        <Card title="Experience (Title) 2" description="Company - Date">
+          <p className="text-sm">Job Description</p>
+        </Card>
+        <Card title="Experience (Title) 3" description="Company - Date">
+          <p className="text-sm">Job Description</p>
+        </Card>
       </Container>
     </>
   );
