@@ -35,11 +35,8 @@ export default function About() {
       <Container className="flex flex-col gap-4">
         <Section title="About Me">
           <Card
-            className="max-w-2xl mx-auto"
             description="I am a Fullstack Web Developer with hands-on experience building scalable web applications for both government and private sector projects.
-
 My journey into tech started after working for 2 years as a Customer Service representative, where I developed strong communication, problem-solving, and user-oriented thinking. That experience shaped how I approach software development today — not just from a technical perspective, but also from the user’s point of view.
-
 I have worked with technologies such as Go, PHP, React.js, and PostgreSQL, and contributed to systems like E-Kinerja at Kementerian Pekerjaan Umum. I focus on building reliable, maintainable systems with clean architecture, efficient performance, and meaningful user impact."
           ></Card>
         </Section>

@@ -6,16 +6,19 @@ export default function Card({
   techStack,
   link,
   image,
+  className,
   children,
 }) {
   const cleanTechStack = techStack ? techStack.join(" • ").trim() : "";
   return (
     <>
-      <article className="h-full bg-[var(--blue-eclipse-1)] rounded-xl p-4 flex flex-col gap-4 shadow-md hover:shadow-lg transition hover:scale-[1.02]">
+      <article
+        className={`h-full bg-[var(--blue-eclipse-1)] rounded-xl p-4 flex flex-col gap-4 shadow-md hover:shadow-lg transition hover:scale-[1.02] shrink-0 ${className || ""}`}
+      >
         <h2 className="text-lg font-semibold">{title}</h2>
         <p className="text-sm text-[var(--blue-eclipse-2)]">{description}</p>
         <p className="text-sm text-[var(--blue-eclipse-2)]">
-          {cleanTechStack ? `Tech stack : {cleanTechStack}` : ``}
+          {cleanTechStack ? `Tech stack : ${cleanTechStack}` : ``}
         </p>
         {image && (
           <Image
