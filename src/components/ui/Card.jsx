@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Card({
   title,
   description,
@@ -9,13 +11,21 @@ export default function Card({
   const cleanTechStack = techStack ? techStack.join(" • ").trim() : "";
   return (
     <>
-      <article className="bg-[var(--blue-eclipse-1)] rounded-xl p-4 flex flex-col gap-4 shadow-md hover:shadow-lg transition hover:scale-[1.02]">
+      <article className="h-full bg-[var(--blue-eclipse-1)] rounded-xl p-4 flex flex-col gap-4 shadow-md hover:shadow-lg transition hover:scale-[1.02]">
         <h2 className="text-lg font-semibold">{title}</h2>
         <p className="text-sm text-[var(--blue-eclipse-2)]">{description}</p>
         <p className="text-sm text-[var(--blue-eclipse-2)]">
           {cleanTechStack ? `Tech stack : {cleanTechStack}` : ``}
         </p>
-        {image && <img src={image} alt={title} />}
+        {image && (
+          <Image
+            width={400}
+            height={800}
+            src={image}
+            alt={title}
+            className="rounded-md"
+          />
+        )}
         {children}
       </article>
     </>

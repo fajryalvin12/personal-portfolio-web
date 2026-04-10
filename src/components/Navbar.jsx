@@ -8,7 +8,7 @@ export default function Navbar() {
   const [active, setActive] = useState(false);
   return (
     <>
-      <nav className="flex justify-between p-4 items-center sticky top-0 bg-[var(--blue-eclipse-1)] text-white">
+      <nav className="flex justify-between p-4 items-center sticky top-0 bg-[var(--blue-eclipse-1)] text-white z-0">
         <Link className="text-[#8686ac] hover:text-white" href="/">
           Logo
         </Link>

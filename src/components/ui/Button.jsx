@@ -1,5 +1,5 @@
-export default function Button({ variant, size, children }) {
-  let style = "rounded-md transition cursor-pointer";
+export default function Button({ variant, size, children, isBadge }) {
+  let style = "h-full rounded-md transition cursor-pointer";
 
   // Variant Mapping
   const primary =
@@ -36,6 +36,8 @@ export default function Button({ variant, size, children }) {
     default:
       style += " " + md;
   }
+
+  if (isBadge) style += " " + "max-w-[125px]";
 
   return (
     <button type="button" className={style}>

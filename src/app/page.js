@@ -1,27 +1,34 @@
-"use-client";
+"use client";
 
-import Button from "@/components/ui/Button";
 import Container from "@/components/ui/Container";
 import Section from "@/components/ui/Section";
 import Card from "@/components/ui/Card";
+import picProfile from "../assets/profile_image_portfolio.jpeg";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <>
-      <Container className="flex">
-        <Section title="Section">
-          <h1>Branding Section</h1>
+      <Container className="flex gap-8 items-center">
+        <Section title="Fullstack Web Developer">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-            eveniet, amet quos nemo mollitia odio, eos in repellendus saepe
-            aliquam fugit dolore sapiente facere sit alias reprehenderit
-            nostrum. Vitae, eveniet.
+            Building scalable and reliable web applications with a strong focus
+            on performance and user experience.
           </p>
-          <Button variant="outline" size="md" children="Outline" />
-          <Button variant="primary" size="md" children="Primary" />
+          <p>
+            Former Customer Service professional turned developer — bringing
+            problem-solving, communication, and user-first thinking into every
+            system I build..
+          </p>
         </Section>
         <Section>
-          <Card title="Image" />
+          <Image
+            width={400}
+            height={800}
+            src={picProfile}
+            alt="Profile"
+            className="rounded-md"
+          />
         </Section>
       </Container>
     </>
