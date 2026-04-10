@@ -1,7 +1,10 @@
 export default function Container({ children, className }) {
   return (
     <>
-      <div className={`max-w-5xl mx-auto px-6 py-8 ${className || ""}`}>
+      <div
+        className={`max-w-5xl mx-auto px-6 py-8 tracking-tight
+leading-relaxed ${className || ""}`}
+      >
         {children}
       </div>
     </>

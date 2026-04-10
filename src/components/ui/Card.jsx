@@ -10,11 +10,11 @@ export default function Card({
   children,
 }) {
   const cleanTechStack = techStack ? techStack.join(" • ").trim() : "";
+  const baseStyle =
+    "h-full bg-[var(--blue-eclipse-1)] rounded-xl p-4 flex flex-col gap-4 shadow-md hover:shadow-lg transition-all duration-500 hover:scale-[1.02] hover:shadow-xl shrink-0 border border-white/10 backdrop-blur-sm";
   return (
     <>
-      <article
-        className={`h-full bg-[var(--blue-eclipse-1)] rounded-xl p-4 flex flex-col gap-4 shadow-md hover:shadow-lg transition hover:scale-[1.02] shrink-0 ${className || ""}`}
-      >
+      <article className={`${baseStyle} ${className || ""}`}>
         <h2 className="text-lg font-semibold">{title}</h2>
         <p className="text-sm text-[var(--blue-eclipse-2)]">{description}</p>
         <p className="text-sm text-[var(--blue-eclipse-2)]">
