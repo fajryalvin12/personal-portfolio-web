@@ -66,7 +66,7 @@ export default function Experience() {
   return (
     <>
       <Container className="flex gap-4">
-        <Section className="flex gap-4 overflow-x-scroll overflow-y-hidden">
+        <Section className="flex gap-4 overflow-x-scroll overflow-y-hidden scroll-smooth">
           {experiences.map((item) => (
             <Card
               key={item.title}
@@ -75,7 +75,7 @@ export default function Experience() {
               className="max-w-sm mx-auto"
             >
               {item.jobdesc.map((jobItem, index) => (
-                <p className="text-sm">
+                <p key={index} className="text-sm">
                   {index + 1}. {jobItem}
                 </p>
               ))}

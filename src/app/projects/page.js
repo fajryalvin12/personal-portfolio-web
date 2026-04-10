@@ -41,7 +41,7 @@ export default function Projects() {
           <Button variant="outline" size="sm" children="Backend" />
           <Button variant="outline" size="sm" children="Fullstack" />
         </Section>
-        <Section className="flex gap-4 overflow-x-scroll overflow-y-hidden">
+        <Section className="flex gap-4 overflow-x-scroll overflow-y-hidden scroll-smooth">
           {/* Detail Project */}
           {projects.map((item) => (
             <Card
