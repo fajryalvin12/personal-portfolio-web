@@ -1,4 +1,4 @@
-export default function Button({ variant, size, children, isBadge }) {
+export default function Button({ variant, size, children, isBadge, ...props }) {
   let style = "h-full rounded-md transition cursor-pointer";
 
   // Variant Mapping
@@ -40,7 +40,7 @@ export default function Button({ variant, size, children, isBadge }) {
   if (isBadge) style += " " + "max-w-[125px]";
 
   return (
-    <button type="button" className={style}>
+    <button type="button" className={style} {...props}>
       {children}
     </button>
   );

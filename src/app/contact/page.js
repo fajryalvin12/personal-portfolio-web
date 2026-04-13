@@ -32,12 +32,12 @@ export default function Contact() {
           </div>
           <div className="flex flex-col gap-2">
             <label htmlFor="message">Message</label>
-            <input
-              className="border rounded-md"
+            <textarea
+              className="border rounded-md min-h-3xl"
               type="text"
               id="message"
               name="message"
-            />
+            ></textarea>
           </div>
           <Button variant="outline">Submit!</Button>
         </form>
