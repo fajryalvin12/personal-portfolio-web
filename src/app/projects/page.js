@@ -33,7 +33,7 @@ export default function Projects() {
 
   return (
     <>
-      <Container>
+      <Container className="py-16 space-y-16 flex flex-col gap-4 ">
         {/* Project Showcase */}
         <Section className="flex gap-4 justify-center">
           {/* Variant Button */}

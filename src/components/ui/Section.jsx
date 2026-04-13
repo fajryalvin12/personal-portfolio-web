@@ -1,7 +1,7 @@
 export default function Section({ children, title, className }) {
   return (
     <>
-      <section className={`py-6 space-y-6 ${className || ""}`}>
+      <section className={`space-y-8 ${className || ""}`}>
         {title && (
           <h2 className="text-2xl md:text-3xl font-bold tracking-tight">
             {title}

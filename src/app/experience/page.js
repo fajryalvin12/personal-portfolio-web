@@ -65,7 +65,7 @@ export default function Experience() {
 
   return (
     <>
-      <Container className="flex gap-4">
+      <Container className="py-16 space-y-16 flex flex-col gap-4">
         <Section className="flex gap-4 overflow-x-scroll overflow-y-hidden scroll-smooth">
           {experiences.map((item) => (
             <Card
