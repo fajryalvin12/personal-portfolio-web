@@ -26,8 +26,20 @@
 }
 
 body {
-  background: linear-gradient(180deg, #0f0e47, #000000, #272757);
+  background: linear-gradient(
+    to bottom,
+    #0f0e47 0%,
+    #0a0a2a 40%,
+    #000000 70%,
+    #272757 100%
+  );
   color: var(--background);
   font-family: Arial, Helvetica, sans-serif;
   height: auto;
+}
+
+@media (min-width: 720px) {
+  body {
+    background-repeat: no-repeat;
+  }
 }
