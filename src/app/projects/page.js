@@ -32,36 +32,24 @@ export default function Projects() {
   ];
 
   return (
-    <>
-      <Container className="py-16 space-y-16 flex flex-col gap-4 ">
-        {/* Project Showcase */}
-        <Section className="flex gap-4 justify-center">
-          {/* Variant Button */}
-          <Button variant="outline" size="sm" children="Frontend" />
-          <Button variant="outline" size="sm" children="Backend" />
-          <Button variant="outline" size="sm" children="Fullstack" />
-        </Section>
-        <Section className="flex gap-4 overflow-x-scroll overflow-y-hidden scroll-smooth">
-          {/* Detail Project */}
-          {projects.map((item) => (
-            <Card
-              key={item.title}
-              title={item.title}
-              description={item.description}
-              techStack={item.techStack}
-              className="max-w-sm mx-auto"
-            >
-              <Button variant="outline" size="sm">
-                Link
-              </Button>
-            </Card>
-          ))}
-        </Section>
-        <Section className="flex justify-center gap-4">
-          <Button variant="outline" size="sm" children="Prev" />
-          <Button variant="outline" size="sm" children="Next" />
-        </Section>
-      </Container>
-    </>
+    <Container className="max-w-md py-16 space-y-16 flex flex-col gap-4">
+      {/* Project Showcase */}
+      <Section className="flex gap-4 overflow-x-scroll overflow-y-hidden scroll-smooth">
+        {/* Detail Project */}
+        {projects.map((item) => (
+          <Card
+            key={item.title}
+            title={item.title}
+            description={item.description}
+            techStack={item.techStack}
+            className="max-w-sm mx-auto"
+          >
+            <Button variant="outline" size="sm">
+              Link
+            </Button>
+          </Card>
+        ))}
+      </Section>
+    </Container>
   );
 }
