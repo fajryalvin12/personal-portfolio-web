@@ -20,7 +20,7 @@ export const metadata = {
     title: "Fajry Alvin Hidayat | Fullstack Web Developer",
     description:
       "Fullstack Web Developer dengan pengalaman membangun aplikasi web skala pemerintahan dan swasta.",
-    url: "https://personal-portfolio-web-taupe.vercel.app",
+    url: "https://portfolio-fajryalvin.vercel.app/",
     siteName: "Fajry Alvin Portfolio",
     locale: "id_ID",
     type: "website",

@@ -60,7 +60,7 @@ export const projects = [
     title: "ERP Ticketing",
     description:
       "Internal ticketing system for ERP complaint management with priority levels (High/Medium/Low), ticket tracking by status (Open/In Progress/Closed), and admin dashboard with analytics per application.",
-    techStack: ["React.js", "Node.js", "PostgreSQL"],
+    techStack: ["React.js", "Express.js", "Prisma ORM", "PostgreSQL"],
     image: "/projects/ticketing-erp.png",
     link: "https://github.com/fajryalvin12/ticketing-erp-yakesma",
   },
