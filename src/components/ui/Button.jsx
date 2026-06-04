@@ -1,7 +1,6 @@
 export default function Button({ variant, size, children, isBadge, ...props }) {
-  let style = "h-full rounded-md transition cursor-pointer";
+  let style = "rounded-md transition cursor-pointer";
 
-  // Variant Mapping
   const primary =
     "bg-[var(--blue-eclipse-4)] text-white hover:text-[var(--blue-eclipse-3)] hover:bg-white hover:border-[var(--blue-eclipse-3)] border";
   const outline =
@@ -15,10 +14,9 @@ export default function Button({ variant, size, children, isBadge, ...props }) {
       style += " " + outline;
       break;
     default:
-      style = primary;
+      style += " " + primary;
   }
 
-  // Size Mapping
   const sm = "px-3 py-1 text-sm";
   const md = "px-4 py-2 text-base";
   const lg = "px-6 py-3 text-lg";
@@ -37,7 +35,7 @@ export default function Button({ variant, size, children, isBadge, ...props }) {
       style += " " + md;
   }
 
-  if (isBadge) style += " " + "max-w-[125px]";
+  if (isBadge) style += " max-w-[125px]";
 
   return (
     <button type="button" className={style} {...props}>
