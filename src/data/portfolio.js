@@ -35,30 +35,34 @@ export const projects = [
   {
     title: "Tickhub",
     description:
-      "Full-featured online live event booking platform with responsive design for both mobile and desktop users. Integrated event listing, ticket category, and user authentication using Golang and PostgreSQL, secured with JWT.",
+      "Full-featured online live event booking platform with responsive design for both mobile and desktop. Integrated event listing, ticket category, and user authentication using Golang and PostgreSQL, secured with JWT.",
     techStack: ["React.js", "Go", "PostgreSQL"],
-    link: null,
+    image: "/projects/tickhub.png",
+    link: "https://github.com/fajryalvin12/fgh21-react-event-organizer",
   },
   {
-    title: "E-Kinerja",
+    title: "KasirApp",
     description:
-      "Government-scale web application for employee performance evaluation, using PHP Native, jQuery, and MySQL.",
-    techStack: ["jQuery", "PHP Native", "MySQL"],
-    link: null,
+      "Point-of-sale dashboard with real-time product management, transaction tracking, and low-stock alerts. Features role-based auth for admin and cashier, with clean dashboard UI.",
+    techStack: ["React.js", "Node.js", "PostgreSQL", "JWT"],
+    image: "/projects/kasirapp.png",
+    link: "https://github.com/fajryalvin12/inventory-transaction-management",
   },
   {
-    title: "Simple Login Page",
+    title: "Shortify",
     description:
-      "Mini frontend app for login, handled by Authentication, hashing password for security and using localStorage for storing data.",
-    techStack: ["HTML", "CSS", "JS", "Local Storage"],
-    link: null,
+      "Minimal URL shortener — paste a long link, get a clean short one instantly. Built with a clean dark UI and instant redirect handling.",
+    techStack: ["Next.js", "Go", "PostgreSQL"],
+    image: "/projects/shortify.png",
+    link: "https://github.com/fajryalvin12/url-shortener",
   },
   {
-    title: "Simple Cashier App",
+    title: "ERP Ticketing",
     description:
-      "Backend app with solid microservices architecture for product management and safety transaction using Node.js & Express, Prisma ORM, PostgreSQL and JWT for auth.",
-    techStack: ["Node.js", "Express", "Prisma ORM", "PostgreSQL"],
-    link: null,
+      "Internal ticketing system for ERP complaint management with priority levels (High/Medium/Low), ticket tracking by status (Open/In Progress/Closed), and admin dashboard with analytics per application.",
+    techStack: ["React.js", "Node.js", "PostgreSQL"],
+    image: "/projects/ticketing-erp.png",
+    link: "https://github.com/fajryalvin12/ticketing-erp-yakesma",
   },
 ];
 
@@ -136,17 +140,17 @@ export const socialLinks = [
   },
   {
     name: "LinkedIn",
-    href: "https://linkedin.com/in/fajryalvinhidayat",
+    href: "https://linkedin.com/in/fajryalvin",
     icon: "linkedin",
   },
   {
     name: "Instagram",
-    href: "https://instagram.com/alvinfajry",
+    href: "https://instagram.com/fajryalvin",
     icon: "instagram",
   },
   {
     name: "WhatsApp",
-    href: "https://wa.me/6282140924421",
+    href: "https://wa.me/62XXXXXXXXXX",
     icon: "whatsapp",
     isWA: true,
   },

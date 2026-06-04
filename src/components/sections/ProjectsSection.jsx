@@ -46,13 +46,15 @@ export default function ProjectsSection() {
           {projects.map((item, i) => (
             <div
               key={item.title}
-              className={`${base} ${inView ? visible : hidden}`}
+              className={`${base} ${inView ? visible : hidden} group`}
               style={{ transitionDelay: `${i * 100}ms` }}
             >
               <Card
                 title={item.title}
                 description={item.description}
                 techStack={item.techStack}
+                image={item.image}
+                imageAlt={`Screenshot ${item.title}`}
               >
                 {item.link ? (
                   <Button variant="outline" size="sm">
@@ -61,8 +63,8 @@ export default function ProjectsSection() {
                     </a>
                   </Button>
                 ) : (
-                  <span className="text-xs text-[var(--blue-eclipse-2)]">
-                    Link coming soon
+                  <span className="text-xs text-[var(--blue-eclipse-2)]/60 italic">
+                    Private / Coming soon
                   </span>
                 )}
               </Card>
