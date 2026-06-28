@@ -9,6 +9,8 @@ export const techStacks = [
   "Next.js",
   "React.js",
   "PHP",
+  "Laravel",
+  "Yii",
   "Go",
   "Javascript",
   "HTML",
@@ -18,6 +20,7 @@ export const techStacks = [
   "Git",
   "Postman",
   "Trello",
+  "Claude API",
 ];
 
 export const education = [
