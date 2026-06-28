@@ -87,6 +87,17 @@ export const projects = [
 
 export const experiences = [
   {
+    title: "IT Developer",
+    company: "Yakesma",
+    period: "Mei 2026 – Present",
+    jobdesc: [
+      "Developed an internal ERP Ticketing System using Next.js, Express.js, MySQL, and Prisma to streamline bug reporting and feature requests from 100+ organizational users.",
+      "Maintained and enhanced 6 enterprise ERP systems (SIDIK, SIKMA, SIPRO, SIHUM, SIFIN, SKEMA) built on Yii2, PHP, and PostgreSQL, resolving 10+ tickets covering bug fixes, feature additions, and system optimizations.",
+      "Coordinated with IT Manager and cross-functional stakeholders to drive ERP feature development aligned with business needs.",
+      "Ensured system reliability and stability of organization-wide ERP platforms through proactive debugging, code review, and regular maintenance.",
+    ],
+  },
+  {
     title: "Programmer – Fullstack Web Developer",
     company: "Kementerian Pekerjaan Umum",
     period: "Apr 2025 – Des 2025",
