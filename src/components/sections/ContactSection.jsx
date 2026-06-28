@@ -40,6 +40,11 @@ const socials = [
     href: "https://instagram.com/alvinfajry",
     label: "Instagram",
   },
+  {
+    name: "Upwork",
+    href: "https://www.upwork.com/freelancers/~015c483e7acb7f4dd1?viewMode=1",
+    label: "Upwork",
+  },
 ];
 
 // Ganti dengan nomor WA kamu yang benar (format: 62XXXXXXXXXX)

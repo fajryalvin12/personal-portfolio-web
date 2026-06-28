@@ -33,6 +33,14 @@ export const education = [
 
 export const projects = [
   {
+    title: "AI Document Analyzer",
+    description:
+      "AI-powered document analysis tool that extracts text from PDFs, generates instant summaries, and answers questions based on document content using Anthropic Claude API.",
+    techStack: ["Next.js", "Claude API", "PostgreSQL", "Supabase"],
+    image: "/projects/ai-doc-analyzer.png",
+    link: "https://ai-doc-analyzer-psi.vercel.app",
+  },
+  {
     title: "Tickhub",
     description:
       "Full-featured online live event booking platform with responsive design for both mobile and desktop. Integrated event listing, ticket category, and user authentication using Golang and PostgreSQL, secured with JWT.",
@@ -149,8 +157,13 @@ export const socialLinks = [
     icon: "instagram",
   },
   {
+    name: "Upwork",
+    href: "https://www.upwork.com/freelancers/~015c483e7acb7f4dd1?viewMode=1",
+    icon: "upwork",
+  },
+  {
     name: "WhatsApp",
-    href: "https://wa.me/62XXXXXXXXXX",
+    href: "https://wa.me/6282140924421",
     icon: "whatsapp",
     isWA: true,
   },
