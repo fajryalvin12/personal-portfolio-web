@@ -36,6 +36,14 @@ export const education = [
 
 export const projects = [
   {
+    title: "AI Email Automation",
+    description:
+      "Automated workflow that summarizes incoming Gmail emails using Anthropic Claude AI and delivers key points instantly via Telegram notification. Built with n8n, zero manual intervention needed.",
+    techStack: ["N8n", "Claude API", "Gmail API", "Telegram API"],
+    image: "/projects/ai-email-automation.png",
+    link: "https://github.com/fajryalvin12/ai-email-automation",
+  },
+  {
     title: "AI Document Analyzer",
     description:
       "AI-powered document analysis tool that extracts text from PDFs, generates instant summaries, and answers questions based on document content using Anthropic Claude API.",
